@@ -6,9 +6,14 @@ metadata:
   name: girus-1
 spec:
   containers:
-  - image: alpine
+  - image: nginx
     name: girus-1
     resources: {}
+  - image: busybox
+    name: busybox
+    args:
+    - sleep 
+    - "600"
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 status: {}
