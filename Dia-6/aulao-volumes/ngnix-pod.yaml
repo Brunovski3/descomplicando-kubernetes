@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ngnix-pod
+spec:
+  containers:
+  - name: ngnix
+    image: nginx
+    ports:
+    - containerPort: 80
+    volumeMounts:
+    - name: meu-pvc
+      mountPath: /usr/share/ngnix/html
+  volumes:
+  - name: meu-pvc
+    persistentVolumeClaim:
+      claimName: meu-pvc

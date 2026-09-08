@@ -11,6 +11,6 @@ spec:
       - ReadWriteOnce
     persistentVolumeReclaimPolicy: Retain
     nfs:
-      server: 172.17.0.2
+      server: 10.0.0.99
       path: "/mnt/nfs"
     storageClassName: brunovski
