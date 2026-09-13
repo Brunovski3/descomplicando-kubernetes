@@ -8,20 +8,20 @@ spec:
   selector:
     matchLabels:
       app: nginx
-      template:
-        metadata:
-          labels:
-            app: nginx
-  spec:
-    containers:
-    - name: nginx
-      image: nginx:latest
-      ports:
-      - containerPort: 80
-        name: http
-      volumeMounts:
-      - name: nginx-volume
-        mountPath: /usr/share/nginx/html
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+          name: http
+        volumeMounts:
+        - name: nginx-volume
+          mountPath: /usr/share/nginx/html
   volumeClaimTemplates:
   - metadata:
       name: nginx-volume
