@@ -17,7 +17,7 @@ spec:
           subPath: nginx.conf
         - name: nginx-tls
           mountPath: /etc/nginx/tls
-    volumes:
+  volumes:
     - name: nginx-config-volume
       configMap:
         name: nginx-config
