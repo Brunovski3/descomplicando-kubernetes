@@ -9,6 +9,8 @@ metadata:
     nginx.ingress.kubernetes.io/auth-realm: "Autenticação Necessaria!"
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     bruno: "gostoso"
+    #nginx.ingress.kubernetes.io/canary: "true"
+    #nginx.ingress.kubernetes.io/canary-weight: ""
 spec:
   ingressClassName: nginx
   tls:
