@@ -1,0 +1,2 @@
+# Documentação não entra na estatística de linguagens
+*.md linguist-documentation=true
