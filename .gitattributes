@@ -1,2 +1,6 @@
+# Força a classificação do GitHub Linguist
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
+
 # Documentação não entra na estatística de linguagens
 *.md linguist-documentation=true
