@@ -17,7 +17,7 @@ Tudo aqui é YAML aplicável com `kubectl apply -f`, com alguns arquivos auxilia
 | `Dia-6/` | Storage: **PV**, **PVC**, **StorageClass** e **NFS** (com script de montagem) |
 | `Dia-7/` | **StatefulSet** + Service **headless** com nginx |
 | `Dia-8/` | **Secrets**, **ConfigMap** e o `nginx.conf` montado no Pod |
-| `Dia-9/` | Aplicação real: **n8n** (Deployment, Service, PVC, Ingress) + **Tailscale** |
+| `Dia-9/` | Aplicação real: **n8n** (Deployment, Service, PVC, dois Ingress: Traefik e Tailscale) + **Keycloak** (values do `keycloakx` + ingress privado do Tailscale) + **ProxyGroup** do Tailscale Operator |
 | `Dia-10/` | **Ingress** nginx com TLS/**cert-manager**, basic auth e canary release |
 
 ## Pré-requisitos
